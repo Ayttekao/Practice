@@ -47,7 +47,7 @@ namespace Cache
                     
                     foreach (var (itemString, (_, dateTime)) in _map)
                     {
-                        if (maxLifetimeRecord < dateTime - currentTime)
+                        if (maxLifetimeRecord < currentTime - dateTime)
                         {
                             maxLifetimeRecord = dateTime - currentTime;
                             oldestKey = itemString;
@@ -83,10 +83,11 @@ namespace Cache
         }
         static void Main(string[] args)
         {
-            Cache<int> myCache = new Cache<int>(8, new TimeSpan(0, 0, 10));
+            Cache<int> myCache = new Cache<int>(2, new TimeSpan(0, 0, 10));
             myCache.Save("firstValue", 12);
             myCache.Save("secondValue", 14);
             myCache.Save("thirdValue", 666);
+
             Console.WriteLine(myCache.Get("thirdValue"));
             
             /* Exceptions same keys */
