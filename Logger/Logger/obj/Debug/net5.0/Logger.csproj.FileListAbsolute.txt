@@ -1,0 +1,16 @@
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\Logger.exe
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\Logger.deps.json
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\Logger.runtimeconfig.json
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\Logger.runtimeconfig.dev.json
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\Logger.dll
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\ref\Logger.dll
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\bin\Debug\net5.0\Logger.pdb
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.csproj.AssemblyReference.cache
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.AssemblyInfoInputs.cache
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.AssemblyInfo.cs
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.csproj.CoreCompileInputs.cache
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.dll
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\ref\Logger.dll
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.pdb
+C:\Users\Ayttekao\RiderProjects\Logger\Logger\obj\Debug\net5.0\Logger.genruntimeconfig.cache
