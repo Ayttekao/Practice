@@ -25,7 +25,7 @@ namespace Cache
             {
                 DateTime currentTime = DateTime.Now;
                 foreach (var (key, value) in _map)
-                    if (currentTime - value.Item2 > _lifeеimeRecords)
+                    if (currentTime - value.Item2 >= _lifeеimeRecords)
                     {
                         _map.Remove(key);
                         _size--;
