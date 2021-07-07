@@ -10,7 +10,6 @@ namespace Cache
         {
             private Dictionary<string, ValueTuple<T, DateTime>> _map;
             private uint _capacity;
-            private uint _size;
             private TimeSpan _lifeеimeRecords;
 
             public Cache(uint inputCapacity, TimeSpan inputLifeеimeRecords)
@@ -18,7 +17,6 @@ namespace Cache
                 _map = new Dictionary<string, ValueTuple<T, DateTime>>();
                 _capacity = inputCapacity;
                 _lifeеimeRecords = inputLifeеimeRecords;
-                _size = 0;
             }
 
             private void RefreshLifetime()
@@ -28,7 +26,6 @@ namespace Cache
                     if (currentTime - value.Item2 >= _lifeеimeRecords)
                     {
                         _map.Remove(key);
-                        _size--;
                     }
             }
 
@@ -39,7 +36,7 @@ namespace Cache
                 if (_map.TryGetValue(key, out _))
                     throw new ArgumentException("Key already in cache!");
                 
-                if (_size == _capacity)
+                if (_map.Count == _capacity)
                 {
                     string oldestKey = null;
                     DateTime currentTime = DateTime.Now;
@@ -66,7 +63,6 @@ namespace Cache
                 }
 
                 RefreshLifetime();
-                _size++;
             }
 
             public T Get(string key)
